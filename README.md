@@ -1,67 +1,108 @@
-FoodTech Blockchain System (Django Project)
-🚀 Project Overview
+# 🍽️ FoodTech Blockchain System
 
-This is a Food Technology Blockchain-based web application built using Django.
-It focuses on improving transparency, security, and traceability in food supply chains using blockchain concepts.
+A secure and transparent food supply chain management system built using Django and Blockchain technology.  
+This project ensures data integrity, traceability, and security across the food distribution process.
 
-🛠️ Tech Stack
-Python 🐍
-Django 🌐
-SQLite / PostgreSQL 🗄️
-HTML, CSS, JavaScript 🎨
-Blockchain (custom implementation)
-OpenCV (if used in biometric modules)
-Gunicorn (deployment)
-Whitenoise (static files)
-📁 Project Structure
+---
+
+## 🚀 Features
+
+- 🔗 Blockchain-based data integrity system  
+- 🔐 Secure user authentication system  
+- 📦 Food supply tracking module  
+- 🧾 Transaction history verification  
+- 🖥️ Admin dashboard for management  
+- 🌐 Web-based interface using Django  
+
+---
+
+## 🛠️ Tech Stack
+
+- Backend: Django (Python)  
+- Frontend: HTML, CSS, JavaScript  
+- Database: SQLite (development) / PostgreSQL (production)  
+- Blockchain: Custom Python implementation  
+- Server: Gunicorn  
+- Static Files: Whitenoise  
+
+---
+
+## 📁 Project Structure
 FoodTech/
 │
-├── FoodTech/          # Django project settings
-├── FoodTechApp/       # Main application
-│   ├── views.py
-│   ├── urls.py
-│   ├── models.py
-│   └── templates/
+├── FoodTech/ # Django project settings
+│ ├── settings.py
+│ ├── urls.py
+│ └── wsgi.py
 │
-├── Blockchain.py      # Custom blockchain logic
+├── FoodTechApp/ # Main application
+│ ├── views.py
+│ ├── urls.py
+│ ├── models.py
+│ ├── templates/
+│ └── static/
+│
+├── Blockchain.py # Blockchain logic
 ├── manage.py
 └── requirements.txt
-⚙️ Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/your-username/foodtech-blockchain.git
-cd foodtech-blockchain
-2️⃣ Create virtual environment
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+git clone https://github.com/your-username/FoodTech.git
+
+cd FoodTech
+
+
+### 2. Create virtual environment
+
 python -m venv venv
+
 
 Activate:
 
-venv\Scripts\activate   # Windows
-source venv/bin/activate  # Mac/Linux
-3️⃣ Install dependencies
+venv\Scripts\activate (Windows)
+source venv/bin/activate (Mac/Linux)
+
+
+### 3. Install dependencies
+
 pip install -r requirements.txt
-4️⃣ Run migrations
+
+
+### 4. Run migrations
+
 python manage.py migrate
-5️⃣ Start development server
+
+
+### 5. Run server
+
 python manage.py runserver
+
 
 Open:
 
 http://127.0.0.1:8000/
-🌐 Deployment (Render)
 
-Deployed using Render
 
-Start Command:
+---
+
+## 🌍 Deployment
+
+Deployed using Render  
+Start command:
+
 gunicorn FoodTech.wsgi:application
-🔐 Features
-Blockchain-based food tracking
-Secure data storage
-User authentication system
-Admin dashboard
-Transaction verification system
-📦 Requirements
 
-Main dependencies:
+
+---
+
+## 📦 Dependencies
+
 
 Django
 gunicorn
@@ -72,19 +113,33 @@ pypng
 opencv-python-headless
 numpy
 Pillow
-⚠️ Known Issues
-Some dependencies must be installed manually (pyaes, pbkdf2, pypng)
-SQLite not recommended for production
-Better to use PostgreSQL for deployment
-🚀 Future Improvements
-AI-based food quality detection
-Mobile app integration
-Smart contract integration
-Real-time tracking system
-👨‍💻 Author
+
+
+---
+
+## ⚠️ Notes
+
+- Use PostgreSQL for production
+- Run collectstatic before deployment
+- Ensure all dependencies are installed
+
+---
+
+## 🚀 Future Improvements
+
+- AI-based food quality detection  
+- Smart contract integration  
+- Mobile app support  
+- Real-time tracking system  
+
+---
+
+## 👨‍💻 Developer
 
 Sreelatha Budda
 
-📌 License
+---
 
-This project is for educational purposes.
+## 📜 License
+
+This project is for educational purposes only.
