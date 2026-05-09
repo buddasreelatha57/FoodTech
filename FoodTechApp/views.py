@@ -9,7 +9,7 @@ from django.core.files.storage import FileSystemStorage
 
 import pyqrcode
 
-from Blockchain import *
+from .Blockchain import *
 from Block import *
 
 
