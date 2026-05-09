@@ -3,9 +3,9 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'your-secret-key-here'
+SECRET_KEY = os.environ.get("SECRET_KEY", "dev-secret-key")
 
-DEBUG = False   # important for Render
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "foodtech-8zcd.onrender.com",
@@ -82,5 +82,10 @@ STATICFILES_DIRS = [
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
