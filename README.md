@@ -104,15 +104,15 @@ gunicorn FoodTech.wsgi:application
 ## 📦 Dependencies
 
 
-Django
+Django==4.2.16
 gunicorn
 whitenoise
+
 pyaes
 pbkdf2
+pyqrcode
 pypng
-opencv-python-headless
-numpy
-Pillow
+pillow
 
 
 ---
